@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+    <linkman id="100">
+        <name>Will</name>
+        <email>ooooo@qq.com</email>
+        <address>cd</address>
+        <group>xmg</group>
+    </linkman>
+    <linkman id="2">
+        <name>Stef</name>
+        <email>lanyotech@qq.com</email>
+        <address>cd</address>
+        <group>xmg</group>
+    </linkman>
+    <linkman id="789">
+        <name>ccc</name>
+        <email>fff</email>
+        <address>dddd</address>
+        <group>wx</group>
+    </linkman>
+</contacts>

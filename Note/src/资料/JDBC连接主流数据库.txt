@@ -1,0 +1,34 @@
+jdbc连接oracle、mysql等主流数据库的驱动类和url
+-----------------------------------------------------------
+oracle 
+driverClass：oracle.jdbc.driver.OracleDriver
+url：jdbc:oracle:thin:@127.0.0.1:1521:dbname
+-----------------------------------------------------------
+mysql  
+driverClass：com.mysql.jdbc.Driver
+url：jdbc:mysql://localhost:3306/mydb
+
+PS：有的时候，mysql的驱动类也也会看到使用org.gjt.mm.mysql.Driver的情况，
+org.gjt.mm.mysql.Driver是早期的驱动名称，后来就改名为com.mysql.jdbc.Driver，
+现在一般都推荐使用 com.mysql.jdbc.Driver。在最新版本的mysql jdbc驱动中，为了保持对老版本的兼容，仍然保留了org.gjt.mm.mysql.Driver，但是实际上 org.gjt.mm.mysql.Driver中调用了com.mysql.jdbc.Driver，因此现在这两个驱动没有什么区别。
+-----------------------------------------------------------
+DB2 
+driverClass：com.ibm.db2.jcc.DB2Driver
+url：jdbc:db2://127.0.0.1:50000/dbname
+-----------------------------------------------------------
+syBase 
+driverClass：com.sybase.jdbc.SybDriver
+url：jdbc:sybase:Tds:localhost:5007/dbname
+-----------------------------------------------------------
+PostgreSQL 
+driverClass：org.postgresql.Driver
+url：jdbc:postgresql://localhost/dbname
+-----------------------------------------------------------
+Sql Server2000 
+driverClass：com.microsoft.jdbc.sqlserver.SQLServerDriver
+url：jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=dbname
+-----------------------------------------------------------
+Sql Server2005 
+driverClass：com.microsoft.sqlserver.jdbc.SQLServerDriver
+url：jdbc:sqlserver://localhost:1433; DatabaseName=dbname
+-----------------------------------------------------------
