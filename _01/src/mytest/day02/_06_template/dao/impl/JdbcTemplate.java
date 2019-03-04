@@ -44,7 +44,7 @@ public class JdbcTemplate {
             }
             rs = ps.executeQuery();
             // 处理结果集
-            return rsh.handle(rs);
+            return rsh.handler(rs);
         } catch (Exception e){
             e.printStackTrace();
         } finally {
